@@ -1,0 +1,37 @@
+{
+  "name": "NFT-based-photo-marketplace",
+  "version": "1.0.0",
+  "description": "NFT-based-photo-marketplace",
+  "main": "index.js",
+  "scripts": {
+    "test": "truffle test ./test/*",
+    "start-blank": "rm -rf client/src && cp -rf barebones/src client/",
+    "client": "cd client && npm run start",
+    "console": "truffle console --network local",
+    "migrate:local": "truffle migrate --reset --network local",
+    "migrate:ropsten": "truffle migrate --reset --network ropsten",
+    "migrate:rinkeby": "truffle migrate --reset --network rinkeby",
+    "migrate:gather": "truffle migrate --reset --network gather"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rrecuero/zepkit.git"
+  },
+  "keywords": [
+    "zeppelinos",
+    "openzeppelin",
+    "truffle",
+    "react"
+  ],
+  "author": "Ramon Recuero <ramon@dapis.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rrecuero/zepkit/issues"
+  },
+  "homepage": "https://github.com/rrecuero/zepkit#readme",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.2.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {}
+}
